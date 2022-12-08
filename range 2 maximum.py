@@ -4,7 +4,6 @@ if __name__ == '__main__':
     postNumber = int(input())
 
     count = 0
-    count2 = 0
     total = 0
 
     while postNumber != 0:
