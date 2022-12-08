@@ -1,7 +1,9 @@
 if __name__ == '__main__':
-    prev = next = total = 0
     a = int(input())
-    while a != 0:
-        if a >
-        a = int(input())
-    print(next)
+    b = int(input())
+
+    n = 3
+
+    for i in range(a, b+1):
+        i = i ** 3
+        print(i)
