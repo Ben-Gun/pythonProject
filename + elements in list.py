@@ -6,6 +6,5 @@ if __name__ == '__main__':
         number = int(input())
         a.append(number)
     for i in range(s):
-        if a[i] > a[i-1] and a[i] > a[i+1]:
+        if a[i] > 0:
             print(a[i])
-#элементы больше предыдущего
