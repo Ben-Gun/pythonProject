@@ -3,11 +3,11 @@ def longKey(**kwargs):
     temp = 0
     lKey = ''
     for i in kwargs.items():
-        l = len(i[0])
-        if l > temp:
-            temp = l
+        j = len(i[0])
+        if j > temp:
+            temp = j
             lKey = i
-    return (lKey)
+    print(lKey)
 
 if __name__ == '__main__':
-    print(longKey(a=3, bb=2, c=4))
+    longKey(a=3, bb=7, ckk=4)
