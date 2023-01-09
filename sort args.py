@@ -8,6 +8,6 @@ def sortA(*args):
         else:
             sorteed.append(i)
     sorteed.sort()
-    return sorteed
+    print(sorteed)
 if __name__ == '__main__':
-    print(sortA(5, 1, 3, 'z', 'g', 'a'))
+    sortA(5, 1, 3, 'z', 'g', 'a')
