@@ -9,6 +9,5 @@ def sortA(*args):
             sorteed.append(i)
     sorteed.sort()
     print(sorteed)
-
 if __name__ == '__main__':
     sortA(5, 1, 3, 'z', 'g', 'a')

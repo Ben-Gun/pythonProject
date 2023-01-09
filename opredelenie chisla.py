@@ -9,4 +9,3 @@ if __name__ == '__main__':
             amount = temp[0]
             res = i
     print(res[0], amount)
-
