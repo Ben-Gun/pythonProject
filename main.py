@@ -1,39 +1,14 @@
-if __name__ == '__main__':
-    num = 0
-    res = []
-    li = []
-    temp = 0
-    decision = 0
-    for i in open('text.txt', 'r+'):
-        li = i.split(' ')
-        decision = int(li[-1])
-        for j in range(1, len(li)-2, 2):
-            if li[j] == '*':
-                temp = int(li[j-1]) * int(li[j+1])
-                continue
-            elif li[j] == '/':
-                temp = int(li[j-1]) // int(li[j+1])
-                continue
-            if li[j] == '*':
-                temp = temp * int(li[j + 1])
-            elif li[j] == '/':
-                temp = temp // int(li[j + 1])
-        for j in range(2, len(li)-2, 2):
-            if li[j-1] == '*':
-                continue
-            if li[j-1] == '/':
-                continue
-            if li[j-1] == '-':
-                num -= int(li[j])
-            if li[j-1] == '+':
-                num = int(li[j])
-        num = num + temp
-        if decision == num:
-            res.append('True')
-        else:
-            res.append('False')
-        f = open('output.txt', 'w+')
-        f.write(str(res))
-        f.close()
-        print(num)
-        num = 0
+def is_prime(x):
+    for i in range(2, (x//2)+1):
+        if x % i == 0:
+            return False
+    return x
+
+a = [1, 20, 35, 17, 20, 61, 21, 8]
+res = []
+for i in a:
+    if is_prime(i) == False:
+        continue
+    else:
+        res.append(is_prime(i))
+print(res)
