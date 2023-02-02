@@ -27,8 +27,8 @@ def dijkstra(start, goal, graph):
                 visited[neigh_node] = cur_node
     return visited
 
-start = '1'
-goal = '3'
+start = '2'
+goal = '4'
 visited = dijkstra(start, goal, graph)
 
 cur_node = goal
